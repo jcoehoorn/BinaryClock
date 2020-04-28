@@ -1,0 +1,33 @@
+﻿<Window x:Class="BinaryClock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BinaryClock"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="80" Width="140" WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="False" MouseDown="Window_MouseDown" Loaded="Window_Loaded" Deactivated="Window_Deactivated">
+    
+    <Grid>
+        <Button Content="X" HorizontalAlignment="Left" Margin="0,-2,0,0" VerticalAlignment="Top" Click="CloseLabel_Click" Name="CloseButton"  Background="Transparent" BorderThickness="0"></Button>
+        
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" Name="H8" GroupName="H8" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="70,10,0,0" VerticalAlignment="Top" Name="H4" GroupName="H4" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="90,10,0,0" VerticalAlignment="Top" Name="H2" GroupName="H2" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="110,10,0,0" VerticalAlignment="Top" Name="H1" GroupName="H1" IsEnabled="False"/>
+
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Name="M32" GroupName="M32" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Name="M16" GroupName="M16" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top" Name="M8" GroupName="M8" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="70,30,0,0" VerticalAlignment="Top" Name="M4" GroupName="M4" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="90,30,0,0" VerticalAlignment="Top" Name="M2" GroupName="M2" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="110,30,0,0" VerticalAlignment="Top" Name="M1" GroupName="M1" IsEnabled="False"/>
+
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Name="S32" GroupName="S32" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top" Name="S16" GroupName="S16" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top" Name="S8" GroupName="S8" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="70,50,0,0" VerticalAlignment="Top" Name="S4" GroupName="S4" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="90,50,0,0" VerticalAlignment="Top" Name="S2" GroupName="S2" IsEnabled="False"/>
+        <RadioButton Content="" HorizontalAlignment="Left" Margin="110,50,0,0" VerticalAlignment="Top" Name="S1" GroupName="S1" IsEnabled="False"/>
+    </Grid>
+    
+</Window>
