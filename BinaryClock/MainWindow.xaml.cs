@@ -24,7 +24,6 @@ namespace BinaryClock
         protected void dispatcherTimer_Tick(object sender, EventArgs e)
         {
             DateTime moment = DateTime.Now;
-
             if (moment.Hour > 12) moment = moment.AddHours(-12);
 
             H8.IsChecked = (moment.Hour & 8) == 8;
@@ -45,11 +44,6 @@ namespace BinaryClock
             S4.IsChecked = (moment.Second & 4) == 4;
             S2.IsChecked = (moment.Second & 2) == 2;
             S1.IsChecked = (moment.Second & 1) == 1;
-        }
-
-        private void Label_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            //Environment.Exit(0);
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
